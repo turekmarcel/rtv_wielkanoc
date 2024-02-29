@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.g-active {
+    display: flex !important;
+}
+
+
+#gerlach-dark-background {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+    z-index: 9;
+}
+
+.gerlach-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #F8F2E9;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+.g-banner-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.gerlach-menu {
+    padding: 60px 0;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+
+    .gerlach-menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .gerlach-circle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 4px 5px 1px 0px #DDD9D4;
+            border-radius: 50%;
+            height: 160px;
+            width: 160px;
+
+
+            .gerlach_img_1 {
+                max-height: 180px;
+            }
+
+            .gerlach_img_2 {
+                max-height: 200px;
+            }
+
+            .gerlach_img_3 {
+                max-height: 120px;
+            }
+
+            .gerlach_img_4 {
+                max-height: 100px;
+            }
+
+            .gerlach_img_5 {
+                max-height: 130px;
+            }
+        }
+
+        p {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 20px;
+            color: #b01236;
+        }
+    }
+}
+
+.gerlach-destription {
+    display: flex;
+
+    .gerlach-influencer {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+        z-index: 3;
+
+        .gerlach-influencer-img {
+            max-height: 380px;
+        }
+    }
+
+    .gerlach-title {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+
+        .gerlach-p {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            p {
+                text-align: center;
+                font-size: 14px;
+                margin: 0 5rem 0 50px;
+                padding: 0 2rem;
+                line-height: 28px;
+            }
+        }
+
+        .gerlach-bar {
+            background-color: #b01236;
+            transform: translate(-80px, 0);
+            z-index: 2;
+            width: 120%;
+
+            p {
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .gerlach-flower-1 {
+        position: absolute;
+        left: -5px;
+        max-height: 400px;
+        z-index: 1;
+    }
+
+    .gerlach-flower-2 {
+        position: absolute;
+        right: 0;
+        max-height: 300px;
+    }
+}
+
+.gerlach-recipes {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 2rem auto;
+
+    .gerlach-recipe {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            padding: 1.5rem 0;
+            z-index: 1;
+        }
+
+        img {
+            max-width: 400px;
+        }
+
+        .gerlach-btn {
+            width: 180px;
+            height: 40px;
+            background-color: #F9E322;
+            border: none;
+            margin: 2rem auto;
+            text-transform: uppercase;
+            cursor: pointer;
+            z-index: 2;
+
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+
+
+
+        .gerlach-recipe-box-1,
+        .gerlach-recipe-box-2 {
+            position: fixed;
+            display: none;
+            padding: 3rem;
+            height: auto;
+            max-width: 1000px;
+            background-color: #F8F2E9;
+            z-index: 10;
+            top: calc(40% - 250px);
+            left: calc(50% - 500px);
+            border-radius: 65px;
+
+            img {
+                width: 300px;
+                height: auto;
+                flex: 1;
+            }
+
+            .gerlach-recipe-desctriprion {
+
+                flex: 1;
+                margin-left: 20px;
+
+                h2 {
+                    color: #b01236;
+                    font-weight: 500;
+                    font-size: 32px;
+                }
+
+                .g-recipe-ingredients {
+                    display: flex;
+                    margin-top: 10px;
+
+
+                    ul {
+                        flex: 1;
+                        list-style: none;
+
+                        li {
+                            font-size: 12px;
+                            line-height: 1.4rem;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            line-height: 1.2rem;
+                            text-align: justify;
+                        }
+                    }
+
+                    .g-recipe {
+                        flex: 2;
+                        padding: 0 20px 20px;
+
+                        p {
+                            font-size: 12px;
+                            line-height: 1.2rem;
+                            text-align: justify;
+                        }
+                    }
+                }
+
+            }
+
+            .gerlach-close-btn {
+                position: absolute;
+                top: 20px;
+                right: 35px;
+                border: none;
+                background: none;
+                font-weight: 600;
+                font-size: 24px;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .gerlach-recipe-box-2 {
+            max-height: 600px;
+            overflow: scroll;
+        }
+    }
+}
+
+
+.gerlach-footer-title {
+    text-align: center;
+    padding: 50px 0 100px;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 800;
+        z-index: 1;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        color: #b01236;
+        font-weight: 800;
+        font-size: 24px;
+        margin: 15px 0;
+        z-index: 1;
+    }
+
+    .gerlach-flower-3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .gerlach-flower-4 {
+        display: none;
+        max-width: 250px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0.6;
+    }
+}
+
+.gerlach-footer {
+    background-color: #b01236;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+
+    img {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 1230px) and (min-width: 960px) {
+    .gerlach-container {
+        max-width: 100%;
+    }
+
+    .gerlach-menu {
+
+        .gerlach-menu-item {
+
+            .gerlach-circle {
+                height: 120px;
+                width: 120px;
+
+                .gerlach_img_1 {
+                    max-height: 140px;
+                }
+
+                .gerlach_img_2 {
+                    max-height: 150px;
+                }
+
+                .gerlach_img_3 {
+                    max-height: 80px;
+                }
+
+                .gerlach_img_4 {
+                    max-height: 80px;
+                }
+
+                .gerlach_img_5 {
+                    max-height: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .g-banner-mobile {
+        display: block;
+    }
+
+    .g-banner {
+        display: none;
+    }
+
+    .gerlach-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .gerlach-menu-item {
+            padding: 25px 0;
+            width: 49%;
+
+            .gerlach-circle {
+                height: 120px;
+                width: 120px;
+
+                .gerlach_img_1 {
+                    max-height: 140px;
+                }
+
+                .gerlach_img_2 {
+                    max-height: 150px;
+                }
+
+                .gerlach_img_3 {
+                    max-height: 80px;
+                }
+
+                .gerlach_img_4 {
+                    max-height: 75px;
+                }
+
+                .gerlach_img_5 {
+                    max-height: 90px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .gerlach-destription {
+        flex-direction: column;
+        position: relative;
+
+        .gerlach-influencer {
+            justify-content: center;
+            order: 1;
+        }
+
+        .gerlach-title {
+            order: 2;
+
+            .gerlach-p {
+                order: 2;
+
+                p {
+                    text-align: justify;
+                    margin: 30px 15px;
+                    padding: 0;
+                }
+            }
+
+            .gerlach-bar {
+                width: 100%;
+                transform: translate(0, 0);
+                order: 1;
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+        .gerlach-flower-1 {
+            left: -5px;
+            max-height: 300px;
+            top: -150px;
+        }
+
+        .gerlach-flower-2 {
+            right: 0;
+            max-height: 300px;
+            bottom: -100px;
+        }
+    }
+
+    .gerlach-recipes {
+        flex-direction: column;
+        align-items: center;
+
+        .gerlach-recipe {
+
+            h4 {
+                font-size: 18px;
+                padding: 1rem 0;
+            }
+
+            img {
+                width: 100%
+            }
+
+            .gerlach-btn {
+                margin: 1rem auto 3rem;
+            }
+        }
+
+        .gerlach-recipe-box-1,
+        .gerlach-recipe-box-2 {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            top: 0 !important;
+            left: 0 !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            overflow: scroll;
+            max-height: 100vh !important;
+
+            .gerlach-recipe-desctriprion {
+                margin-top: 20px;
+
+            }
+        }
+    }
+
+    .gerlach-footer-title {
+
+        padding: 20px;
+        margin: 10px 0 30px;
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        .gerlach-flower-3 {
+            display: none;
+        }
+
+        .gerlach-flower-4 {
+            display: block;
+        }
+    }
+}
